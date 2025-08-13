@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dream Homes - Real Estate</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+
+    header {
+      background-color: #1e3a5f;
+      color: white;
+      padding: 30px 15px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 8px;
+      font-size: 1.1em;
+    }
+
+    nav {
+      background-color: #2c3e50;
+      padding: 12px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 18px;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    .container {
+      padding: 30px;
+      text-align: center;
+    }
+    h2 {
+      color: #1e3a5f;
+      margin-bottom: 10px;
+    }
+    p.subtext {
+      color: #555;
+      font-size: 1.1em;
+    }
+
+    .property-list {
+      text-align: center;
+      margin-top: 25px;
+    }
+.property {
+  background-color: white;
+  border: 1px solid #ddd;
+  max-width: 400px;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 3px 10px #ccc;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* added for smooth pop-out */
+}
+
+.property:hover {
+  transform: scale(1.05); /* pop-out effect */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* deeper shadow */
+}
+
+    .property img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .property h3 {
+      color: #1e3a5f;
+      margin: 12px 0 5px 0;
+    }
+    .property p {
+      color: #444;
+      font-size: 1em;
+      margin: 6px 0;
+    }
+    .property strong {
+      color: #2ecc71;
+    }
+
+    table {
+      width: 90%;
+      margin: 30px auto;
+      border-collapse: collapse;
+      font-size: 1.05em;
+      box-shadow: 0 3px 12px #ccc;
+    }
+    table th, table td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: center;
+    }
+    table th {
+      background-color: #1e3a5f;
+      color: white;
+    }
+    table tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    form {
+      background-color: white;
+      max-width: 420px;
+      margin: 30px auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px #ccc;
+    }
+    label {
+      font-weight: bold;
+      text-align: left;
+      display: block;
+      margin-top: 10px;
+      color: #1e3a5f;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #bbb;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    input[type="submit"] {
+      background-color: #2ecc71;
+      color: white;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+      padding: 12px;
+      border-radius: 6px;
+    }
+
+    footer {
+      background-color: #1e3a5f;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Dream Homes Real Estate</h1>
+    <p>Find your perfect home with style and comfort</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+  </nav>
+
+  <div class="container" id="home">
+    <h2>Featured Properties</h2>
+    <p class="subtext">Explore our handpicked collection of modern homes</p>
+  </div>
+
+  <div class="container">
+    <div class="property-list">
+      <div class="property">
+        <img src="https://imgs.search.brave.com/n9NRdWttipS_xIsNimVT6WqUnOo6GRF425gPhWUl2vY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTIy/MTg2NTYxNC9waG90/by9iZWF1dGlmdWwt/bHV4dXJ5LXZpbGxh/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz1ROHp6U1lybTZS/c3dQdHk4cVhwVTAz/WThDVWZaVFhSTGlp/X0NNeVVtYnJJPQ" alt="Luxury Villa">
+        <h3>Luxury Villa</h3>
+        <p><strong>Price:</strong> ₹1.2 Cr</p>
+        <p>4 BHK villa with private garden and pool.</p>
+      </div>
+      <div class="property">
+        <img src="https://imgs.search.brave.com/1y4TeixXevpry5Q3W04-GAV0aqnsb3BjMckdEBd8kSk/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9hLjFz/dGRpYnNjZG4uY29t/L3RyYWRlL1RSQURF/X1BST0pFQ1QvMTYz/NTk3NDY4OV9mczZl/dS9STDItRG9ubmFE/b3Rhbi1XQVBELTU0/LmpwZz9kaXNhYmxl/PXVwc2NhbGUmYXV0/bz13ZWJwJnF1YWxp/dHk9NjAmd2lkdGg9/NDAw" alt="Modern Apartment">
+        <h3>Modern Apartment</h3>
+        <p><strong>Price:</strong> ₹75 Lakhs</p>
+        <p>3 BHK apartment with balcony and city view.</p>
+      </div>
+      <div class="property">
+        <img src="https://imgs.search.brave.com/hsc7COgRZrK4XoJ493XqsL-b6AI9su3yvNWUE_UECWQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTUv/NTA5Lzc0OC9zbWFs/bC9jb3p5LXN0b25l/LWNvdHRhZ2UtaWxs/dW1pbmF0aW5nLWR1/cmluZy1hLXNlcmVu/ZS1zdW5zZXQtb3Zl/ci10aGUtbW91bnRh/aW5zLXBob3RvLmpw/Zw" alt="Cozy Cottage">
+        <h3>Cozy Cottage</h3>
+        <p><strong>Price:</strong> ₹55 Lakhs</p>
+        <p>2 BHK cottage near hills, perfect for holidays.</p>
+      </div>
+      <div class="property">
+        <img src="https://imgs.search.brave.com/3FKomt1ZIBATjyz87jr3ImwN8yuCX3V5Mh2GJuZW42E/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzExLzQxLzc4LzEy/LzM2MF9GXzExNDE3/ODEyNzFfRkNpWWZq/dldicHBwT2pKaU0w/bWFGVUp0WlN4emtM/WDQuanBn" alt="Penthouse">
+        <h3>Penthouse</h3>
+        <p><strong>Price:</strong> ₹2 Cr</p>
+        <p>5 BHK ultra-modern penthouse with skyline view.</p>
+      </div>
+      <div class="property">
+        <img src="https://imgs.search.brave.com/0mXb0e18tSycGhpU77I20RL1wIVWRF7ogVcGB_BoKOE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMzAv/MTcxLzQ1MC9zbWFs/bC9hLW1pbmlhdHVy/ZS13b29kZW4taG91/c2Utb24tdGhlLWJl/YWNoLWFpLWdlbmVy/YXRlZC1waG90by5q/cGc" alt="Beach House">
+        <h3>Beach House</h3>
+        <p><strong>Price:</strong> ₹90 Lakhs</p>
+        <p>3 BHK beachside house with ocean breeze.</p>
+      </div>
+      <div class="property">
+        <img src="https://imgs.search.brave.com/9iHi4FZI4WbbusT7QhDtFQYCmuPqilFL-uk0T1DVhAk/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTgv/MjAxLzMwNC9zbWFs/bC9ydXJhbC1mYXJt/aG91c2UtYXQtc3Vu/c2V0LXBob3RvLmpw/Zw" alt="Farmhouse">
+        <h3>Farmhouse</h3>
+        <p><strong>Price:</strong> ₹65 Lakhs</p>
+        <p>Spacious 3 BHK farmhouse with green fields.</p>
+      </div>
+    </div>
+  </div>
+
+  <table>
+    <tr>
+      <th>Property</th>
+      <th>Price</th>
+      <th>Bedrooms</th>
+      <th>Size (sq ft)</th>
+      <th>Location</th>
+    </tr>
+    <tr>
+      <td>Luxury Villa</td>
+      <td>₹1.2Cr</td>
+      <td>4 BHK</td>
+      <td>3200</td>
+      <td>City Outskirts</td>
+    </tr>
+    <tr>
+      <td>Modern Apartment</td>
+      <td>₹75 Lakhs</td>
+      <td>3 BHK</td>
+      <td>1800</td>
+      <td>Downtown</td>
+    </tr>
+    <tr>
+      <td>Cozy Cottage</td>
+      <td>₹55 Lakhs</td>
+      <td>2 BHK</td>
+      <td>1500</td>
+      <td>Hill Side</td>
+    </tr>
+    <tr>
+      <td>Penthouse</td>
+      <td>₹2 Cr</td>
+      <td>5 BHK</td>
+      <td>4000</td>
+      <td>City Center</td>
+    </tr>
+    <tr>
+      <td>Beach House</td>
+      <td>₹90 Lakhs</td>
+      <td>3 BHK</td>
+      <td>2000</td>
+      <td>Sea Shore</td>
+    </tr>
+    <tr>
+      <td>Farmhouse</td>
+      <td>₹65 Lakhs</td>
+      <td>3 BHK</td>
+      <td>3500</td>
+      <td>Village</td>
+    </tr>
+  </table>
+
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form action="404.html">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" placeholder="Your Email">
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Your Phone">
+
+      <label for="property">Interested Property:</label>
+      <select id="property" name="property">
+        <option value="villa">Luxury Villa</option>
+        <option value="apartment">Modern Apartment</option>
+        <option value="cottage">Cozy Cottage</option>
+        <option value="penthouse">Penthouse</option>
+        <option value="beachhouse">Beach House</option>
+        <option value="farmhouse">Farmhouse</option>
+      </select>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <footer>
+  </footer>
+
+<a href="contact.html" style="display:inline-block;
+background:#2ecc71;color:white;
+padding:10px 20px;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;">
+Contact Us
+</a>
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us - Dream Homes</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #1e3a5f, #2ecc71);
+      color: #fff;
+      text-align: center;
+      padding: 40px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: 2.2em;
+    }
+
+    p {
+      margin-bottom: 30px;
+      font-size: 1.2em;
+    }
+
+    .form-container {
+      background: #fff;
+      color: #333;
+      max-width: 500px;
+      margin: auto;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+      text-align: left;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+
+    textarea {
+      height: 80px;
+      resize: none;
+    }
+
+    input[type="radio"], input[type="checkbox"] {
+      width: auto;
+      margin-right: 8px;
+    }
+
+    input[type="submit"] {
+      background: #2ecc71;
+      color: white;
+      font-size: 1.1em;
+      border: none;
+      padding: 12px;
+      margin-top: 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    input[type="submit"]:hover {
+      background: #27ae60;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Contact Dream Homes</h1>
+  <p>Have questions about our properties? Send us your details and we’ll get back to you.</p>
+
+  <div class="form-container">
+    <form action="404.html">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your Email">
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+
+      <label for="property">Interested Property:</label>
+      <select id="property" name="property">
+        <option value="villa">Luxury Villa</option>
+        <option value="apartment">Modern Apartment</option>
+        <option value="cottage">Cozy Cottage</option>
+        <option value="penthouse">Penthouse</option>
+        <option value="beachhouse">Beach House</option>
+        <option value="farmhouse">Farmhouse</option>
+      </select>
+
+      <label for="budget">Budget Range (in ₹):</label>
+      <input type="number" id="budget" name="budget" placeholder="Enter your budget">
+
+      <label for="movein">Preferred Move-in Date:</label>
+      <input type="date" id="movein" name="movein">
+
+      <label>Preferred Contact Method:</label>
+      <input type="radio" id="contact-email" name="contact-method" value="Email">
+      <label for="contact-email" style="display:inline;">Email</label>
+      <input type="radio" id="contact-phone" name="contact-method" value="Phone">
+      <label for="contact-phone" style="display:inline;">Phone</label>
+
+      <label>
+        <input type="checkbox" name="newsletter"> Subscribe to our newsletter
+      </label>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Any special requirements?"></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <a href="index.html" class="back-link">← Back to Home</a>
+
+</body>
+</html>
